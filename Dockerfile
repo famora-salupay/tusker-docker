@@ -11,4 +11,4 @@ RUN set -e && \
     apt-get clean && rm -rf /var/lib/apt/lists/* && \
     tusker --help
 
-CMD ["tusker", "--help"]
+ENTRYPOINT ["tusker"]
